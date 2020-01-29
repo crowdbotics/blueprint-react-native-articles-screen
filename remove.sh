@@ -27,10 +27,10 @@ echo ">> remove blueprint folder"
 if [ -d "$BASE_PATH/src/features/$BLUEPRINT" ]; then rm -Rf $BASE_PATH/src/features/$BLUEPRINT; fi
 
 echo ">> remove 1" 
-sed -i "s/${DATA_1}/ /g" $BASE_PATH/src/config/installed_blueprints.js
+sed -i "/${DATA_1}/d" $BASE_PATH/src/config/installed_blueprints.js
 
 echo ">> remove 2"
-sed -i "s/${DATA_2}/ /g" $BASE_PATH/src/navigator/mainNavigator.js
+sed -i "/${DATA_2}/d" $BASE_PATH/src/navigator/mainNavigator.js
 
 echo ">> remove 3"
-sed -i "s/${DATA_3}/ /g" $BASE_PATH/src/navigator/mainNavigator.js
+sed -i "/${DATA_3}/d" $BASE_PATH/src/navigator/mainNavigator.js
