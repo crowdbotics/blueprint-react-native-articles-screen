@@ -9,7 +9,7 @@ import Article from './screens/article';
 
 import Home from './screens';
 
-export const ArticlesBlueprintNavigator = createStackNavigator(
+export default ArticlesBlueprintNavigator = createStackNavigator(
   {
     Home: {screen: Home},
     Articles1: {screen: Articles1},
