@@ -40,7 +40,7 @@ echo "create blueprint folder"
 mkdir -p $BASE_PATH/src/features/$BLUEPRINT
 
 echo "copy"
-cp -r ./$BLUEPRINT/. $BASE_PATH/src/features/$BLUEPRINT
+cp -r ./ArticlesBlueprint/. $BASE_PATH/src/features/$BLUEPRINT
 
 echo ">> insert 1" 
 sed -i "s/${EXT_POINT_1}/&\n${DATA_1}/g" $BASE_PATH/src/config/installed_blueprints.js
